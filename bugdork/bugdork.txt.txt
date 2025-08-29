@@ -1,0 +1,150 @@
+# Login / Admin Panelleri
+inurl:/admin
+inurl:/administrator
+inurl:/admin/login
+inurl:/cpanel
+inurl:/dashboard
+inurl:/user/login
+intitle:"admin login"
+inurl:/login.php
+inurl:/secure/login
+inurl:/auth
+inurl:/portal
+inurl:/manager
+intitle:"login page"
+intitle:"sign in"
+
+# Dosya ve Yedekler
+ext:bak
+ext:old
+ext:sql
+ext:xml
+ext:json
+ext:log
+ext:env
+intitle:"index of /backup"
+intitle:"index of /db"
+intitle:"index of /mysql"
+ext:tar.gz
+ext:zip
+ext:rar
+ext:7z
+ext:bakup
+ext:backup.sql
+ext:database.sql
+ext:dump.sql
+ext:gz
+ext:tgz
+
+# Hatalı Parametreler (SQLi / XSS)
+inurl:.php?id=
+inurl:.asp?id=
+inurl:.jsp?id=
+inurl:.do?id=
+inurl:.aspx?id=
+inurl:search?q=
+inurl:page=
+inurl:cat=
+inurl:item=
+inurl:product=
+inurl:newsid=
+inurl:forumid=
+inurl:article=
+inurl:storyid=
+inurl:downloadid=
+inurl:courseid=
+inurl:eventid=
+inurl:user=
+inurl:session=
+
+# Config / Sensitif Dosyalar
+ext:conf
+ext:ini
+ext:yml
+ext:git
+ext:svn
+ext:htpasswd
+ext:htaccess
+ext:cfg
+ext:db
+ext:cnf
+ext:properties
+ext:manifest
+ext:pem
+ext:key
+ext:env
+ext:config
+ext:profile
+ext:credentials
+ext:secret
+
+# Upload / Dosya Yönetim
+inurl:/upload
+inurl:/file_upload
+inurl:/uploads
+inurl:/media
+inurl:/images
+inurl:/files
+inurl:/documents
+inurl:/userfiles
+inurl:/profile_images
+inurl:/attachments
+inurl:/downloads
+inurl:/assets
+
+# Indexing & Açık Dizine Sahip Yerler
+intitle:"index of /"
+intitle:"index of /admin"
+intitle:"index of /config"
+intitle:"index of /uploads"
+intitle:"index of /private"
+intitle:"index of /temp"
+intitle:"index of /logs"
+intitle:"index of /public"
+intitle:"index of /downloads"
+intitle:"index of /ftp"
+intitle:"index of /sftp"
+intitle:"index of /ssh"
+intitle:"index of /backup"
+intitle:"index of /db"
+
+# E-mail / PII
+"index of" "contacts.csv"
+"index of" "users.xls"
+"index of" "email.txt"
+filetype:xls inurl:"email"
+filetype:csv inurl:"contacts"
+filetype:txt "password"
+filetype:txt "credentials"
+filetype:txt "users"
+filetype:txt "admin"
+
+# Cloud / API Keys
+ext:json api_key
+ext:yaml aws_secret
+ext:env MAIL_PASSWORD
+ext:ini "db_password"
+ext:log "token"
+ext:txt "secret"
+ext:xml "connectionString"
+ext:json secret
+ext:json key
+ext:yaml secret
+ext:yaml key
+ext:properties password
+ext:properties secret
+
+# Misc
+"phpinfo()" ext:php
+"Apache/2.4.1 (Unix)" inurl:server-status
+"nginx/1." "server at"
+"Index of /ftp"
+"Index of /sftp"
+"Index of /ssh"
+intitle:"phpinfo"
+inurl:/.git
+inurl:.env
+inurl:.bash_history
+inurl:.ssh
+inurl:.htaccess
+inurl:.htpasswd
